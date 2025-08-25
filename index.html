@@ -1,8 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <meta charset="utf-8">
-  <title>Olympus Lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <h1>Olympus Lab</h1>
-  <p>Coming soon.</p>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Olympus Lab</title>
+<link rel="stylesheet" href="/assets/styles.css" />
+
+<header>
+  <div class="nav">
+    <div class="brand">OLYMPUS LAB</div>
+    <nav>
+      <a href="/">Home</a>
+      <span> · </span>
+      <a href="/about.html">About</a>
+      <span> · </span>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Engineering, Security, and Practical Solutions</h1>
+    <p>Olympus Lab is a small, capability‑driven practice focused on IT, cybersecurity, and systems integration.</p>
+    <p style="margin-top:1rem;">
+      <a class="btn" href="/contact.html">Get in touch</a>
+    </p>
+  </section>
+
+  <section style="margin-top:2rem;">
+    <h2 style="margin:0 0 .5rem;">What we do</h2>
+    <div class="grid">
+      <div class="card"><strong>Infrastructure</strong><br/>Networks, servers, storage, automation.</div>
+      <div class="card"><strong>Security</strong><br/>Hardening, monitoring, compliance guidance.</div>
+      <div class="card"><strong>Dev & CI/CD</strong><br/>Registries, pipelines, container workflows.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    © <span id="y"></span> Olympus Lab
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </html>
+
