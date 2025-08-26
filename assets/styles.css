@@ -6,7 +6,21 @@ a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; }
 header { border-bottom: 1px solid #eee; }
 .nav { max-width: var(--max-w); margin: 0 auto; padding: var(--pad); display: flex; gap: 1rem; align-items: center; justify-content: space-between; }
-.brand { font-weight: 700; letter-spacing: .5px; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.brand img {
+  height: 36px;   /* try 28–40px to taste */
+  width: auto;
+  display: block;
+}
+
+/* optional: make the header a bit tighter */
+.nav { padding: 0.75rem var(--pad); }
 main { max-width: var(--max-w); margin: 0 auto; padding: calc(var(--pad)*2) var(--pad); }
 .hero h1 { margin: 0 0 .5rem; font-size: clamp(28px, 5vw, 40px); }
 .hero p { margin: 0; color: #444; line-height: 1.5; }
