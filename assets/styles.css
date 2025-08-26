@@ -14,12 +14,10 @@ header { border-bottom: 1px solid #eee; }
   letter-spacing: .5px;
 }
 .brand img {
-  height: 36px;   /* try 28–40px to taste */
+  height: 36px;
   width: auto;
   display: block;
 }
-
-/* optional: make the header a bit tighter */
 .nav { padding: 0.75rem var(--pad); }
 main { max-width: var(--max-w); margin: 0 auto; padding: calc(var(--pad)*2) var(--pad); }
 .hero h1 { margin: 0 0 .5rem; font-size: clamp(28px, 5vw, 40px); }
