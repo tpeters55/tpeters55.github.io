@@ -22,19 +22,16 @@ header {
   justify-content: space-between;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0;                    /* no text next to the logo */
-  font-weight: 700;
-  letter-spacing: .5px;
-}
+.brand { display:flex; align-items:center; gap:0; line-height:1; }
 
-.brand img {
-  height: clamp(32px, 2.8vw, 44px);
+.brand img{
+  height: 56px;   /* try 56–72px; adjust to taste */
   width: auto;
   display: block;
 }
+
+@media (min-width: 1400px){ .brand img{ height: 64px; } }
+@media (max-width: 560px){  .brand img{ height: 42px; } }
 
 main {
   max-width: var(--max-w);
